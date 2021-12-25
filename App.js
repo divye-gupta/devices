@@ -21,7 +21,6 @@ import Profile from './Profile';
 import Products from './Products';
 import Device from './Device';
 import Notifications from './Notifications';
-import Navbarstack from './routes/Navbarstack';
 import {NativeRouter, Route, Routes, Link} from 'react-router-native';
 
 const App = () => {
@@ -29,15 +28,17 @@ const App = () => {
     <ScrollView>
       <SafeAreaView>
         <> 
-         {/* <SignIn />  */}
-         {/* <SignUp />  */}
+
          {/* <Device/>  */}
          {/* <Products/>  */}
+         {/* <ContactUs/>  */}
+         {/* <Faq/>  */}
          {/* <Home/>  */}
          {/* <Profile/>  */}
-         {/* <Faq/>  */}
-         {/* <ContactUs/>  */}
+         {/* <SignUp />  */}
+         {/* <SignIn />  */}
          {/* <Form />  */}
+
          <Navbar/> 
         </>
       </SafeAreaView>

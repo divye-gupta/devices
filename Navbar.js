@@ -24,12 +24,13 @@ import Home from './Home';
 import Profile from './Profile';
 import Notifications from './Notifications';
 import Form from './Form';
+import Faq from './Faq';
 
 function Navbar() {
   return (
-    <ScrollView style={styles.container}>
+    
       <NativeRouter>
-        <View>
+        <View style={styles.container}>
           
           <ScrollView style={styles.routecon}>
             <Routes>
@@ -76,7 +77,7 @@ function Navbar() {
           </View>
         </View>
       </NativeRouter>
-    </ScrollView>
+
   );
 }
 
@@ -92,13 +93,15 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     justifyContent: 'space-between',
     backgroundColor: '#3F72AF',
+    // height:'20%'
   },
   container: {
     backgroundColor: '#F9F7F7',
-    // height:Dimensions.get('window').height
+    height:Dimensions.get('window').height
   },
   routecon:{
-    height:Dimensions.get('window').height-120
+    height:Dimensions.get('window').height- 120,
+    // height:'98%'
   }
 });
 
