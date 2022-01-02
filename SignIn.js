@@ -7,7 +7,8 @@ import {
   TextInput,
   Button,
   Image,
-  Dimensions
+  Dimensions,
+  TouchableOpacity
 } from 'react-native';
 
 const SignIn = () => {
@@ -29,12 +30,12 @@ const SignIn = () => {
       </View>
 
       <View style={styles.headcontainer2}>
-        <Button color="#112D4E" title="Login" />
+        <Button onPress={signIn} color="#112D4E" title="Login" />
       </View>
 
       <View style={styles.headcontainer1}>
         <Text style={styles.text}>
-          Not Registered?<Text style={styles.text}> SignUp</Text>
+          Not Registered?<TouchableOpacity onPress={()=>updateFormState(() => ({...formState, formType: 'signUp'}))}><Text style={styles.text}> SignUp</Text></TouchableOpacity>
         </Text>
       </View>
     </View>

@@ -19,9 +19,9 @@ function SignUp() {
       </View>
 
       <View style={styles.headcontainer}>
-        <TextInput style={styles.tbox} placeholderTextColor="#3F72AF" style={styles.tbox} placeholder="Full Name" />
-        <TextInput style={styles.tbox} placeholderTextColor="#3F72AF" style={styles.tbox} placeholder="Email" />
-        <TextInput style={styles.tbox} placeholderTextColor="#3F72AF" style={styles.tbox} placeholder="Phone Number" />
+        <TextInput style={styles.tbox} placeholderTextColor="#3F72AF"  placeholder="username" />
+        <TextInput style={styles.tbox} placeholderTextColor="#3F72AF" placeholder="Email" />
+        <TextInput style={styles.tbox} placeholderTextColor="#3F72AF"  placeholder="Phone Number" />
         <TextInput style={styles.tbox} placeholderTextColor="#3F72AF"
           secureTextEntry={true}
           placeholder="Create Password"
@@ -29,7 +29,7 @@ function SignUp() {
       </View>
 
       <View style={styles.headcontainer2}>
-        <Button color="#112D4E" title="SignUp" />
+        <Button onPress={signUp} color="#112D4E" title="SignUp" />
       </View>
 
     </View>

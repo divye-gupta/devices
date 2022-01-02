@@ -10,8 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.14",
+    "@react-native-community/netinfo": "^7.1.7",
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/native-stack": "^6.2.5",
+    "amazon-cognito-identity-js": "^5.2.3",
+    "aws-amplify": "^4.3.11",
     "react": "17.0.2",
     "react-native": "0.66.4",
     "react-native-fontawesome": "^7.0.0",
